@@ -1,0 +1,10 @@
+g4f
+setuptools
+wheel
+requests
+moviepy
+termcolor
+playsound
+srt_equalizer
+assemblyai
+Pillow==9.5.0
