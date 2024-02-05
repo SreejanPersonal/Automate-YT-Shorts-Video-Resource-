@@ -21,12 +21,20 @@ pip install -r requirements.txt
 # Set the Environment Variables
 ASSEMBLY_AI_API_KEY = os.getenv("ASSEMBLY_AI_API_KEY")
 PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
-IMAGEMAGICK_BINARY = os.getenv("IMAGEMAGICK_BINARY")
+IMAGEMAGICK_BINARY = os.getenv("IMAGEMAGICK_BINARY") # IF ISSUE OCCURS THEN CHANGE FILE LOCATION IN conf.py
 
 # Run the backend server
 python main.py
      # OR
 python main.ipynb
+```
+If any error occurs for FFMPEG then follow these steps
+```powershell admin
+# Install Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# Install FFMPEG
+choco install ffmpeg
 ```
 
 See [`.env`](.env) for the required environment variables.
